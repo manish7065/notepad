@@ -12,3 +12,8 @@ mktmpenv [(-c|--cd)|(-n|--no-cd)] [VIRTUALENV_OPTIONS]
 
 lsvirtualenv [-b] [-l] [-h]
 
+mkdir projects
+
+cd projects
+
+django-admin startproject first_proj
