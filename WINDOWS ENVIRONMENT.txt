@@ -16,4 +16,76 @@ mkdir projects
 
 cd projects
 
+
 django-admin startproject first_proj
+
+python manage.py runserver
+
+python manage.py startapp calc
+
+python manage.py calc --To use calc app
+
+from django.urls import path
+
+
+
+--------------------------------------------------------------------------
+
+# 7 hrs video
+
+#change the directory in cmd to desktop using cd c:\Users\<user name>\Desktop
+
+pip install virtualenv
+
+virtualenv env ->will create an environment
+
+env\scripts\activate
+
+env\scripts\deactivate
+
+pip install django
+
+django-admin  -> will give all django-admin commands list
+
+django-admin startproject studybud
+
+#pls confirm the virtual invironment env file and the studybud files
+
+cd studybud
+
+python manage.py runserver
+
+#drag the virtual environment into studybud
+# open the studybud into studio code.In the terminal it will automatically open in virtual environment using ctrl+~
+
+python manage.py runserver
+
+**if facing problem in activating the server then properly check the file path of environment like env\Scripts\activate it will do the work in command prompt as well as in power shell
+
+
+
+ 
+# In main project folder in url.py we will have to import the http response
+
+from django.http import HttpResponse
+
+def home(request):
+	return HttpResponse('Home Page')
+
+def room(request):
+	return HttpResponse("Room")
+
+
+#In urlpatterns we will have to add path
+
+path('',home), 
+path('room/'),
+
+
+# Using such method will make it very messi for big projects so we use app like base used here and link it with urls
+
+# so remove the defined home and room file and pest it to the new file named as urls.py in base app
+
+
+
+ 
