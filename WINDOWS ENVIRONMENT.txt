@@ -87,5 +87,14 @@ path('room/'),
 # so remove the defined home and room file and pest it to the new file named as urls.py in base app
 
 
+------------------------------------------------\
 
+# Django path and interpreter 
+
+# select right interpreter  in the vs code while running the code
+ 
+ pip show django  --it gives youth path of django file installed
+ 
+ 
+ 
  
